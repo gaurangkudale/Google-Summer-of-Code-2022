@@ -39,5 +39,4 @@ Gradle is a build automation tool known for its flexibility to build software. A
 After adding [jpf-core](https://github.com/javapathfinder/jpf-core) as a git-submodule to the SPF, We have linked the another repository to SPF and as we know jpf-symbc depends on artifacts produced by the jpf-core. The main gole of introducing git-submodule is to download and build jpf-symbc as well as jpf-core at once for better user experience.In future if there is another project which depends on artifacts produced by either jpf-core/jpf-symbc then we as add it at the same lavel of gradle sub-project.
 
 &nbsp;
-
 In this project, we also have Continuous Integration (CI) pipeline functionality available from now which will get triggered when code changes and any PR made by the contributor, It should make sure all of your changes work with the rest of the code when it's integrated. It should also compile your code, run tests, and check that it's functional, Here the GitHub Action is used to impliment the CI pipeline.
